@@ -7,10 +7,36 @@ export default async function handler(req, res) {
     const { message } = req.body;
 
     const websiteContext = `
-    Gayatri Vidya Parishad College of Engineering for Women
-    located in Visakhapatnam, Andhra Pradesh.
-    Only answer from this information.
-    `;
+Gayatri Vidya Parishad College of Engineering for Women (GVPCEW)
+is located in Visakhapatnam, Andhra Pradesh.
+
+Departments offered:
+- Computer Science and Engineering (CSE)
+- CSE (Artificial Intelligence & Machine Learning)
+- Cyber Security
+- Electronics and Communication Engineering (ECE)
+- Electrical and Electronics Engineering (EEE)
+
+Admissions:
+- Category A: Through APEAPCET
+- Category B: Management quota
+
+Facilities:
+- Central Library
+- Computer Labs
+- Hostel
+- Transportation
+- Sports facilities
+- Placement Cell
+
+Contact:
+Email: info@gvpcew.ac.in
+Location: Visakhapatnam - 530048, Andhra Pradesh
+
+Only answer strictly from this information.
+If information is not found here, reply:
+"This information is not available on the official college website."
+`;
 
     const geminiResponse = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
