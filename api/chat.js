@@ -13,7 +13,6 @@ is located in Visakhapatnam, Andhra Pradesh.
 Departments offered:
 - Computer Science and Engineering (CSE)
 - CSE (Artificial Intelligence & Machine Learning)
-- Cyber Security
 - Electronics and Communication Engineering (ECE)
 - Electrical and Electronics Engineering (EEE)
 
